@@ -1,0 +1,52 @@
+RESPOSTA 1:
+ let quad = function(num) {
+    return num * num;};
+console.log(quad(4));
+
+
+RESPOSTA 2:
+let saud = function(nome) {
+  return nome * nome;
+};
+console.log(saud(4));
+
+
+RESPOSTA 3:
+let result = function(soma) {
+  return soma * soma;
+};
+
+console.log(result(4));
+
+RESPOSTA 4:
+let resul = function(num){
+ return num * num;
+};
+console.log(resul(4));
+
+RESPOSTA 5:
+let resu = function(n){
+    return n * n;
+};
+
+console.log(resu(4));
+
+
+RESPOSTA 6:
+let resu = function(array){
+    return array * array;
+};
+
+console.log(resu(4));
+
+
+RESPOSTA 7:
+let resu = function(str1, str2){
+    return str1 * str2;
+};
+
+console.log(resu(4));
+
+
+
+
