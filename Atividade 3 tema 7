@@ -1,0 +1,38 @@
+
+function Livro(titulo, autor, anoPublicacao) {
+    this.titulo = titulo;
+    this.autor = autor;
+    this.anoPublicacao = anoPublicacao;
+
+  
+    this.exibirInfo = function() {
+        return `Título: ${this.titulo}, Autor: ${this.autor}, Ano de Publicação: ${this.anoPublicacao}`;
+    };
+}
+function Produto(nome, preco, desconto) {
+    this.nome = nome;
+    this.preco = preco;
+    this.desconto = desconto;
+
+    // Método para calcular o preço final com desconto
+    this.precoFinal = function() {
+        return this.preco - (this.preco * this.desconto / 100);
+    };
+}
+function Estudante(nome, notas) {
+    this.nome = nome;
+    this.notas = notas;
+
+    // Método para calcular a média das notas
+    this.calcularMedia = function() {
+        let soma = this.notas.reduce((total, nota) => total + nota, 0);
+        return soma / this.notas.length;
+    };
+}
+let meuLivro = new Livro("1984", "George Orwell", 1949);
+console.log(meuLivro.exibirInfo());
+let meuProduto = new Produto("Smartphone", 1200, 15);
+console.log(`Preço final com desconto: R$ ${meuProduto.precoFinal()}`);
+
+let meuEstudante = new Estudante("Ana", [7.5, 8.0, 9.0]);
+console.log(`Média das notas: ${meuEstudante.calcularMedia()}`);
